@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude and Longitude"
+        android:id="@+id/textView3"
+        android:textSize="25dp"
+        android:textIsSelectable="false" />
+
+    <TextView android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Example"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#7cfc00"
+        android:textSize="25dp" />
+
+    <TextView android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutorials point "
+        android:textSize="25dp"
+        android:textColor="#7cfc00"
+        style="@style/CustomFontStyle"
+        android:layout_below="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Location"
+        android:id="@+id/textView4"
+        android:textSize="25dp" />
+
+    <TextView android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="my location"
+        android:textSize="25dp"
+        android:textColor="#7cfc00"
+        android:layout_below="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination"
+        android:id="@+id/textView5"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="destination"
+        android:textColor="#7cfc00"
+        android:id="@+id/destination" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Taken"
+        android:id="@+id/textView6"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="time taking"
+        android:textColor="#7cfc00"
+        android:id="@+id/time" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Alarm"
+        android:id="@+id/alarm_stop"
+        android:textColor="#1199ff"
+        android:layout_alignParentEnd="true" />
+</LinearLayout>

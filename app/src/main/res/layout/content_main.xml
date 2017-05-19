@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vinaykumarg.destinationalert.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/bg"
+    android:clickable="true">
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_above="@+id/mode_spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="58dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_max_height"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Destination Alert"
+        android:id="@+id/destalert"
+        android:textColor="#3b2f2f"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size"
+        android:textStyle="bold"
+        android:height="@dimen/abc_action_bar_stacked_max_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/destination"-->
+        <!--android:hint="Type in your Destination"-->
+        <!--android:layout_alignBaseline="@+id/mode_spinner"-->
+        <!--android:layout_alignBottom="@+id/mode_spinner"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set destination"
+        android:id="@+id/getloc"
+        style="@style/Base.Animation.AppCompat.DropDownUp"
+        android:textColor="#2fddcc"
+        android:textStyle="bold"
+        android:background="#170707"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mode_spinner"
+        android:textStyle="bold"
+        android:textColor="#170707"
+        android:background="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/song_spinner"
+        android:textStyle="bold"
+        android:textColor="#170707"
+        android:background="#ffffff"
+        android:layout_below="@+id/mode_spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtPlaceDetails"
+        android:layout_below="@+id/song_spinner"
+        android:layout_alignEnd="@+id/getloc" />
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="75px"
+        android:id="@+id/places"
+        android:background="@drawable/location"
+        android:layout_below="@+id/destalert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>
